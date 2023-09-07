@@ -15,14 +15,14 @@ const ExpCard = (props) => {
                     Google Earth to enhance our geospatial capabilities. 
                     
                     Additionally, I have learned to leverage Amazon EC2 cloud resources and Linux 
-                    machines to established automated processes for managing and updating geospatial 
+                    machines to establish automated processes for managing and updating geospatial 
                     layers on Everbridge's central Saas platform. Doing this has ensured our data 
                     remains current for real-time tracking and informed decision-making.`}
                     <br></br>
                     <br></br>
-                    {`Furthermore, I have has the privilege to design and develop Python-driven bots 
+                    {`Furthermore, I have had the privilege to design and develop Python-driven bots 
                     that interact seamlessly with the Slack Messenger API. These bots play a pivotal 
-                    role in our operations by parsing Government travel and fire department site 
+                    role in our operations by parsing government travel and fire department site 
                     data to provide timely travel alerts and wildfire growth rates, fostering proactive 
                     responses and cross-team collaboration.`} 
                     <br></br>
@@ -38,12 +38,13 @@ const ExpCard = (props) => {
             border-none my-auto mx-10 pt-6">
             <h1 className="text-xl font-bold text-center px-6">{"Senior Intelligence Analyst"}</h1>
             <p className="text-center p-6">
-                {`My full-time position in this role, while not entirely relevant to programming
-                has intilled experience universal to all professional roles. Working with well a team
-                is one of the most treasured skills a professional can have...if one does not
-                work well, the teams efficiency may well be compromised. As a senior in this role,
-                I take on a supervisory role where I actively train junior analysts and ensure
-                that teams are working as expected.`}
+                {`I specialize in proficiently evaluating, researching, and reporting on both 
+                domestic and international security incidents, harnessing a comprehensive array of 
+                disciplines, including OSINT, SIGINT, HUMINT, and GEOINT. My expertise enables me to 
+                provide clients with invaluable insights and strategic recommendations, ensuring 
+                informed decision-making in critical security matters. In addition, I take pride in my role as a 
+                supervisor, mentor, and guide to junior analysts, dedicated to elevating their capabilities in 
+                preparing security reports and ultimately enhancing our team's overall efficiency.`}
                 <br></br>
                 <br></br>
                 {`On a more technical note, this role has made me proficient in working well with

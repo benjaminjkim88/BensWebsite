@@ -9,7 +9,7 @@ import ProjCard from './components/ProjCard';
 
 function App() {
   const [buttonState, setButtonState] = useState({
-    'bio': false,
+    'bio': true,
     'experience': false,
     'education': false,
     'projects': false
@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="bg-gray-900 grid grid-cols-1 h-screen font-sans items-start justify-center">
-      <div className="flex justify-center mx-auto max-w-2xl mt-4 border border-slate-300 rounded-xl p-4 gap-5">
+      <div className="flex justify-center mx-auto max-w-2xl mt-4 mb-20 border border-slate-300 rounded-xl p-4 gap-5">
         <button 
           name='bio'
           className='button-class'

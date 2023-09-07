@@ -13,7 +13,7 @@ const EduCard = () => {
                     <p>In my program, I learned the ins and outs of the Java and Python programming
                     languages. With Python, I learned a great deal about interacting with cloud 
                     systems such as Amazon AWS and working with their components such as managing
-                    storage on cloud S3 buckets and DynamoDB database management.</p>
+                    storage on S3 buckets and DynamoDB database management.</p>
                 </div>
             </div>
 
@@ -24,16 +24,11 @@ const EduCard = () => {
                     <p>I graduated with an English & Communications B.A.</p>
                     <br></br>
                     <br></br>
-                    <p>An English & Communications B.A. might sound completely irrelevant in the 
-                    programming world, but if we attempt to look closer, we will see that while it might 
-                    not pertain to programming, there is more to being a developer than programming.</p>
-                    <br></br>
-                    <br></br>
-                    <p>Having said that, there are a torrent of skills that have been ingrained in me 
-                    during my time studying English. Critical thinking and applying analyzation to 
-                    texts is key in understanding code and problem solving. The ability to communicate
-                    and convey your status to your team clearly and concisely is also important when
-                    working on a scrum team.</p>
+                    <p>I have obtained an arsenal of skills that have been ingrained in me 
+                    during my time studying English. The application of critical thinking and 
+                    analysis to textual information is key in understanding code and problem-solving. 
+                    Additionally, the ability to communicate and convey your status to your team 
+                    clearly and concisely is also important when working on a scrum team.</p>
                 </div>
             </div>
         </div>
