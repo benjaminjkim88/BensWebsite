@@ -1,33 +1,40 @@
 import React from 'react';
 import { useState } from 'react'
-import logo from './logo.svg';
 import './App.css';
-import Header from "./components/Header"
-import Projects from "./components/Projects"
 import BioCard from './components/BioCard';
-import ProjectCard from './components/ProjectCard';
+import ExpCard from './components/ExpCard';
+import EduCard from './components/EduCard';
+import ProjCard from './components/ProjCard';
+
 
 function App() {
-
   const [buttonState, setButtonState] = useState({
-    'bio': true,
-    'education': false,
+    'bio': false,
     'experience': false,
+    'education': false,
     'projects': false
   });
-
+  
   console.log(buttonState)
 
   const handleClick = (event) => {
     const {name} = event.target
-    const updateButtons = {};
     
     setButtonState(prev => ({
       ...prev,
       [name]: !prev[name]
     }));
 
+    for (const key in buttonState) {
+      if (key === [name]) {
+        buttonState[key] = true
+
+      } else {
+        buttonState[key] = false
+      }
+    }
   }
+
 
   return (
     <div className="bg-gray-900 grid grid-cols-1 h-screen font-sans items-start justify-center">
@@ -39,13 +46,13 @@ function App() {
           Bio
         </button>
         <button 
-          name='education'
+          name='experience'
           className='button-class'
           onClick={handleClick}>
           Experience
         </button>
         <button 
-          name='experience'
+          name='education'
           className='button-class'
           onClick={handleClick}>
           Education
@@ -59,19 +66,17 @@ function App() {
 
         <p 
           className="ml-20 text-slate-500">Powered by <br></br>
-          <span className="text-sky-400 font-bold text-xl">React</span>
+          <span className="text-sky-400 font-bold text-xl">React</span> & <br></br>
+          <span className="text-slate-50 font-bold text-xl">Tailwind</span>
         </p>
       </div>
 
-      {buttonState.bio? <BioCard /> : null}
-      {buttonState.projects? <ProjectCard /> : null}
-
-      <div className="flex flex-shrink-0 border border-stone-50">
-
-
-
-      </div>
-      
+      {buttonState.bio ? (
+        <BioCard style={{ opacity: buttonState.bio ? 1 : 0 }} />
+      ) : null}
+      {buttonState.experience? <ExpCard /> : null}
+      {buttonState.education? <EduCard /> : null}
+      {buttonState.projects? <ProjCard /> : null}
     </div>
   );
 }

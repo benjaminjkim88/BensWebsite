@@ -3,22 +3,18 @@ import ProjectCard from './ProjectCard';
 import piratePhoto from './../images/pirate_plunderers.PNG';
 import shopApp from './../images/shopApp.PNG';
 
-const Projects = () => {
+const Projects = (props) => {
     return(
-        <div className="project-container">
-            <h1>My Projects:</h1>
-            <ProjectCard 
-                screenshot={piratePhoto}
-                alt="pirate plunderers screenshot"
-                project="Pirate Plunderers"
-                description="A fun React application involving shooting enemy pirates before they enter your base."
-            />
-            <ProjectCard 
-                screenshot={shopApp}
-                alt="shopping app screenshot"
-                project="Shopping List"
-                description="A cross platform shopping list. Can be used my multiple people to add and delete shopping items in real time!"
-            />
+        <div className="projects-class">
+            <a href={props.link} target="_blank">
+                <img className="mb-6 rounded-xl transition-transform transform group-hover:scale-105 
+                                hover:opacity-25" 
+                    src={props.screenshot} 
+                    alt={props.alt}
+                />
+            </a>
+            <h3 className="font-bold text-center mb-6">{props.project}</h3>
+            <p className='text-center'>{props.description}</p>
         </div>
     )
 }

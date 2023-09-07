@@ -4,6 +4,12 @@
 
 @layer components {
   .button-class {
-    @apply border px-5 py-2 border-slate-400 text-slate-400 rounded-xl text-center gap-10 hover:border-none hover:bg-slate-400 hover:text-gray-900
+    @apply border px-5 py-2 border-slate-400 text-slate-400 rounded-xl text-center gap-10 
+    hover:border-none hover:bg-slate-400 hover:text-gray-900
+    active:bg-sky-400
+  }
+
+  .projects-class {
+    @apply rounded-xl px-6 py-6
   }
 }
