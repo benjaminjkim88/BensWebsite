@@ -71,9 +71,7 @@ function App() {
         </p>
       </div>
 
-      {buttonState.bio ? (
-        <BioCard style={{ opacity: buttonState.bio ? 1 : 0 }} />
-      ) : null}
+      {buttonState.bio? <BioCard /> : null}
       {buttonState.experience? <ExpCard /> : null}
       {buttonState.education? <EduCard /> : null}
       {buttonState.projects? <ProjCard /> : null}

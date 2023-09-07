@@ -3,7 +3,7 @@ import photo from './../images/headshot.jpg'
 
 const BioCard = () => {
     return(
-        <div className='flex flex-col gap-8 -mt-32 transition-opacity'>
+        <div className='flex flex-col gap-8 -mt-32'>
             <img className="h-80 w-80 rounded-full p-6 mx-auto my-auto -mb-1 -mt-20" src={photo} alt="ben headshot" />
 
             <div className="flex flex-col  items-center rounded-xl mx-auto w-80 bg-slate-600

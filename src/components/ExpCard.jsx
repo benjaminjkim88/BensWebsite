@@ -3,8 +3,7 @@ import { useState } from "react";
 const ExpCard = (props) => {
 
     return(
-        <div className={`flex flex-col gap-10 -mt-80 tranition-all duration-200
-                        ${props.visible? "opacity-100" : "opacity-0"}`}>
+        <div className={`flex flex-col gap-10 -mt-80`}>
                         
             <div className="flex flex-col place-items-center rounded-xl w-82 bg-slate-600
                                 border-none my-auto mx-10 pt-6">
